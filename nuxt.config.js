@@ -10,6 +10,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'keywords', content: '关键字1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '专业汽车、轿车托运服务商' }
     ],
     /* 图标配置 */

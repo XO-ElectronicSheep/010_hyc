@@ -19,6 +19,11 @@ export default {
                 hid: 'description',
                 name: 'description',
                 content: '详情标题'
+            },
+            {
+                hid: 'keywords',
+                name: 'keywords',
+                content: '关键字33'
             }
         ],
     },
