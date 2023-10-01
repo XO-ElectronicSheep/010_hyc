@@ -41,8 +41,6 @@ export default {
                 this.navs.forEach((item, index) => {
                     if (item.path == route.path) {
                         this.activeIndex = String(index)
-                    } else {
-                        this.activeIndex = '1'
                     }
                 })
             }

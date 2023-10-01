@@ -27,7 +27,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    //'element-ui/lib/theme-chalk/index.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     {
       src: '~/plugins/element-ui',
-      ssr: true //开启服务端渲染
+      ssr: false //关闭服务端渲染
     }
 
   ],
@@ -74,6 +74,18 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+    },
+    babel: {
+      "plugins": [
+        [
+          "component",
+          {
+            "libraryName": "element-ui",
+            "styleLibraryName": "theme-chalk"
+          }
+        ]
+      ]
     }
   }
 }
+
