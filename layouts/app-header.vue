@@ -17,7 +17,8 @@ export default {
                 { path: '/', title: '首页' },
                 { path: '/case', title: '成功案例' },
                 { path: '/about', title: '关于' },
-            ]
+            ],
+            username: 'cc'
         }
     },
     methods: {

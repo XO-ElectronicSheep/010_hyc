@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <!-- 跳转-声明式 -->
     <AppHeader></AppHeader>
     <!-- 展示区 router-view -->
