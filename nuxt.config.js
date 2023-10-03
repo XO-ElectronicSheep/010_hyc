@@ -6,19 +6,18 @@ module.exports = {
   */
   head: {
     /* 标头配置 */
-    title: process.env.npm_package_name || '运好车',
+    title: '运好车',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: '关键字1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '专业汽车、轿车托运服务商' }
+      { hid: 'description', name: 'description', content: '专业汽车、轿车托运服务商' }
     ],
     /* 图标配置 */
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
 
   /*
   ** Customize the progress-bar color
@@ -37,7 +36,8 @@ module.exports = {
     {
       src: '~/plugins/element-ui',
       ssr: false //关闭服务端渲染
-    }
+    },
+    { src: '~plugins/mixins.js', ssr: false }
 
   ],
   /*
