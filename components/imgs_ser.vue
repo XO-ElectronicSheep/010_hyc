@@ -1,6 +1,5 @@
 <template>
     <div class="neirong" v-if="isMobile">
-
         <div class="goods">
             <div class="fenge">
                 <img src="../assets//log_nav.jpg" alt="好运车-汽车托运">
@@ -8,16 +7,22 @@
             <div class="en-1">专注轿车托运 <p>12年</p>
             </div>
             <div class="cn-2">好运车品牌合同及保险</div>
-
         </div>
         <div class="zhanshi_hetou">
             <div class="ht">
-
+                <i class="el-icon-postcard">
+                    <span class="header-1">汽车独立保险</span>
+                </i>
             </div>
             <div class="ht">
-
+                <i class="el-icon-connection">
+                    <span class="header-1">正式合同一式两份</span>
+                </i>
             </div>
             <div class="ht">
+                <i class="el-icon-notebook-2">
+                    <span class="header-1">资质证书-专业保障</span>
+                </i>
 
             </div>
         </div>
@@ -86,15 +91,29 @@ export default {
 }
 
 .zhanshi_hetou {
-    width: 60%;
+    width: 64%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .ht {
-    border: 0.1rem solid black;
-    width: 20rem;
+
+    width: 24rem;
     height: 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.ht i {
+    font-size: 3.2rem;
+    color: #ff0000;
+    line-height: 3.2rem;
+}
+
+.ht i span {
+    font-size: 2rem;
+    color: #000000;
+
 }
 </style>
