@@ -47,7 +47,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: #f5f5f5;
-
+  width: 100%;
 }
 
 *,
