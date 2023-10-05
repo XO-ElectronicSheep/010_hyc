@@ -35,15 +35,16 @@ module.exports = {
   plugins: [
     {
       src: '~/plugins/element-ui',
-      ssr: false //关闭服务端渲染
+      ssr: true //关闭服务端渲染
     },
-    { src: '~plugins/mixins.js', ssr: false }
+    { src: '~plugins/mixins.js', ssr: true }
 
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
+
   ],
   /*
   ** Nuxt.js modules
@@ -51,6 +52,7 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+
   ],
   /*
   ** Axios module configuration

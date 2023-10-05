@@ -31,16 +31,36 @@
     </div>
 
     <div v-else>
-        <div class="yonghu">
-            <el-form ref="phoneForm" :model="formData" :rules="formRules" class="el-form-ios">
-                <el-form-item prop="phone" class="ios-form-item">
-                    <el-input v-model="formData.phone" placeholder="必填/请输入手机号" maxlength="11" size="large">
-                        <el-button slot="append" @click="submitForm">获取价格</el-button>
-                    </el-input>
-                </el-form-item>
-            </el-form>
+        <div class="getwen-3">
+            <div class="headerg">
+                <div>托运询价</div>
+                <div><a href="tel:1234567890">订单查询</a></div>
+            </div>
+            <div class="app-1">
+                <el-cascader size="large" :options="options" v-model="value" @change="cars" placeholder="选填/车型选择">
+                </el-cascader>
+            </div>
+            <div class="app-1">
+                <el-cascader size="large" :options="pcTextArr" v-model="selectedOptions" @change="handleChange_start"
+                    placeholder="选填/出发地选择">
+                </el-cascader>
+            </div>
+            <div class="app-1">
+                <el-cascader size="large" :options="pcTextArr" v-model="endOptions" @change="handleChange_end"
+                    placeholder="选填/终点地选择">
+                </el-cascader>
+            </div>
+            <div class="telip-2">
+                <el-form ref="phoneForm" :model="formData" :rules="formRules">
+                    <el-form-item prop="phone">
+                        <el-input v-model="formData.phone" placeholder="必填/请输入手机号" maxlength="11" size="large"></el-input>
+                    </el-form-item>
+                    <el-form-item class="button-pc-1">
+                        <el-button type="primary" @click="submitForm">点击获取报价</el-button>
+                    </el-form-item>
+                </el-form>
+            </div>
         </div>
-
     </div>
 </template>
 
@@ -152,13 +172,14 @@ export default {
 <style scoped>
 .moeay {
     display: flex;
-    width: 95%;
-    border: 0.25rem solid rgb(207, 207, 207);
+    width: 100%;
+    /*   border: 0.1rem solid rgb(207, 207, 207); */
     margin: 1rem auto;
     height: 20rem;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #ffffff88;
     /*  box-shadow: -10px 5px 5px #a5a5a5; */
+    border-radius: 1rem;
 }
 
 
@@ -187,13 +208,18 @@ export default {
 
 .getwen {
     display: flex;
-    border: 0.2rem solid rgb(175, 175, 175);
+    /* border: 0.2rem solid rgb(175, 175, 175); */
     width: 95%;
-    height: 10rem;
+    height: 12rem;
     margin: 0 auto;
-    box-shadow: -5px 5px 5px #a5a5a5;
+    box-shadow: -5px 8px 3px #c7c7c7;
     /* align-items: center; */
     justify-content: center;
+    border-radius: 1rem;
+    background-color: white;
+    border-top: 0.1rem solid #c7c7c7;
+    border-right: 0.1rem solid #c7c7c7;
+    border-left: 0.1rem solid #c7c7c7;
 }
 
 
@@ -207,14 +233,18 @@ export default {
     margin-left: 2rem !important;
 }
 
-.el-select .el-input .el-cascader {
+/* .el-select .el-input .el-cascader {
     width: 100% !important;
 }
 
 .el-input {
     border: none !important;
-}
+} */
 
+div a {
+    text-decoration: none;
+    color: black;
+}
 
 .yonghu {
     width: 95%;
@@ -225,5 +255,50 @@ export default {
 .ios-form-item {
     width: 80%;
     margin: 0 auto;
+}
+
+.getwen-3 {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: white;
+    height: 33rem;
+    position: relative;
+    margin-top: -5rem;
+    z-index: 9;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.getwen-3 div {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.getwen-3 .app-1 {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.headerg {
+    width: 90%;
+    height: 0.2rem !important;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.headerg div:first-child {
+    color: #409eff;
+}
+
+.el-input {
+    margin-bottom: 0 !important;
 }
 </style>

@@ -18,6 +18,7 @@
 
     <footer>
       <!-- 在这里放置你的页脚或其他内容 -->
+      <Footerc />
     </footer>
 
   </div>
@@ -26,9 +27,11 @@
 
 <script>
 import AppHeader from './app-header';
+import Footerc from './footerc.vue';
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    Footerc
   },
 
 
@@ -46,7 +49,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   width: 100%;
 }
 

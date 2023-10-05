@@ -1,7 +1,7 @@
 <template>
-    <div class="nav">
+    <div class="nav" v-if="isMobile">
         <!-- pc布局 -->
-        <div class="nav-pc-flx" v-if="isMobile">
+        <div class="nav-pc-flx">
             <div class="ael-center">
                 <img src="../assets/log_nav.jpg" alt="好运车" class="nav_p">
             </div>
@@ -14,16 +14,19 @@
             </div>
             <div class="ael-center">
                 <div class="tel">
-                    <i class="el-icon-phone-outline"></i>
+                    <i class="el-icon-phone-outline">
+                        免费热线:
+                    </i>
                     {{ telephone }}
                 </div>
             </div>
         </div>
+    </div>
 
 
-
+    <div class="nav" v-else>
         <!-- 移动布局 -->
-        <div v-else class="yidong">
+        <div v class="yidong">
             <div>
                 <i class="el-icon-house size-icon" @click="goToPage('/')"></i>
             </div>
@@ -53,9 +56,7 @@
 export default {
     data() {
         return {
-            isMobile: false,
             isDropdown: true,
-            windowWidth: 0,
             activeIndex: '-1',
             navs: [
                 { path: '/', title: '首页' },
@@ -67,15 +68,10 @@ export default {
         }
     },
     methods: {
-
         /* 点击nav切换 */
         handleSelect(key, keyPath) {
             this.$router.push(this.navs[key].path)
         },
-
-
-
-
         /* 移动端nav切换 */
         handleVisibleChange(visible) {
             this.isDropdown = !visible
@@ -115,7 +111,7 @@ export default {
     width: 100%;
     z-index: 999;
     top: 0;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 
 }
 
@@ -138,7 +134,7 @@ export default {
 
 
 .el-menu {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 .el-menu-item:hover {

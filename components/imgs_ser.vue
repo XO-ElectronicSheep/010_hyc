@@ -13,17 +13,53 @@
                 <i class="el-icon-postcard">
                     <span class="header-1">汽车独立保险</span>
                 </i>
+                <p>
+                    汽车托运保险几点注意：1、保单上的被保险人和地址联系电话匹配您所提供的信息。2、在保单表格中的货物名称包含您的车型和车牌号信息。3、保险金额符合您爱车当前价值。4、起运地和目和地符合您所要托运的出发地和到达地。
+                </p>
             </div>
             <div class="ht">
                 <i class="el-icon-connection">
                     <span class="header-1">正式合同一式两份</span>
                 </i>
+                <p>关于轿车托运合同，大家有几点需要注意的：1、是否盖有托运公司的公章，有盖章才有法律效应。2、是否记录车辆相关情况：车内携带的物品、公理数、油量、车辆外观。3、是否写明价格以及支付方式，避免被多次收费或隐性收费。
+                </p>
             </div>
             <div class="ht">
                 <i class="el-icon-notebook-2">
                     <span class="header-1">资质证书-专业保障</span>
                 </i>
+                <p>
+                    重要提醒：从事汽车托运的企业必须具备以下两个资质证书才能承接相关服务。<br>
+                    （三证合一的 《营业执照》、《道路运输经营许可证》）
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <div class="neirong-ios" v-else>
+        <div class="goods-ios">
+            <div class="fenge-ios">
+                <img src="../assets//log_nav.jpg" alt="好运车-汽车托运">
+            </div>
+            <div class="en-1-ios">专注轿车托运 <p>12年</p>
+            </div>
+            <div class="cn-2-ios">好运车品牌合同及保险</div>
+        </div>
+        <div class="zhanshi_hetou-ios">
+            <div class="ht-ios">
+                <i class="el-icon-postcard">
+                    <span class="header-1-ios">汽车独立保险</span>
+                </i>
+            </div>
+            <div class="ht-ios">
+                <i class="el-icon-connection">
+                    <span class="header-1-ios">正式合同一式两份</span>
+                </i>
+            </div>
+            <div class="ht-ios">
+                <i class="el-icon-notebook-2">
+                    <span class="header-1-ios">资质证书-专业保障</span>
+                </i>
             </div>
         </div>
     </div>
@@ -37,8 +73,8 @@ export default {
 <style scoped>
 .neirong {
     width: 100%;
-    background-color: white;
-    height: 18rem;
+    background-color: #00172a;
+    height: 27rem;
     display: flex;
 }
 
@@ -63,7 +99,7 @@ export default {
     display: flex;
     justify-content: center;
     text-align: end;
-
+    color: white;
 }
 
 .en-1 p {
@@ -74,7 +110,7 @@ export default {
 }
 
 .cn-2 {
-    color: #474747;
+    color: #ffffff;
     padding-top: 1rem;
     font-size: 3rem;
 }
@@ -82,6 +118,7 @@ export default {
 .fenge {
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .fenge p {
@@ -99,21 +136,97 @@ export default {
 
 .ht {
 
-    width: 24rem;
-    height: 15rem;
+    width: 28rem;
+    height: 17rem;
     justify-content: center;
     align-items: center;
+    /* background-color: #f5f5f5; */
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
 }
 
 .ht i {
     font-size: 3.2rem;
     color: #ff0000;
     line-height: 3.2rem;
+    margin-top: 0.5rem;
 }
 
 .ht i span {
     font-size: 2rem;
     color: #000000;
 
+}
+
+.ht p {
+    font-size: 1.3rem !important;
+    width: 25rem;
+    margin: 0.2rem auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.header-1 {
+    color: white !important;
+}
+
+.neirong-ios {
+    width: 100%;
+    height: 33rem;
+    display: flex;
+    z-index: -1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00172a59;
+    background-image: url("../assets/banner1.jpg");
+    margin-top: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.neirong-ios>div {
+    flex: 0 0 auto;
+    /* 可选，用于控制元素的宽度 */
+    width: 100%;
+    /* 可选，用于控制元素的宽度 */
+}
+
+.goods-ios {
+    height: 15rem;
+    padding-top: 1rem;
+    display: flex;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.en-1-ios p {
+    color: #ff0000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cn-2-ios {
+    font-size: 2.5rem;
+}
+
+.zhanshi_hetou-ios {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* border: 0.1rem solid black; */
+    color: red;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ht-ios {
+    flex: 0 0 auto;
+    /* 可选，用于控制元素的宽度 */
+    width: 60%;
+    /* 可选，用于控制元素的宽度 */
+    text-align: center;
+    padding: 0.3rem 0;
 }
 </style>

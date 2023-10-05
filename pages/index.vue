@@ -57,7 +57,7 @@ export default {
 
 .carouselcc {
   margin-top: 6rem;
-
+  background-color: white !important;
 }
 
 .img_car {
