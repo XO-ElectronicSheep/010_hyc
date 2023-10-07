@@ -7,20 +7,20 @@
 
 
 
-    <header>
-      <!-- 在这里放置你的导航栏或其他内容 -->
-      <AppHeader></AppHeader>
-    </header>
+    <!--  <header> -->
+    <!-- 在这里放置你的导航栏或其他内容 -->
+    <!--   <AppHeader></AppHeader>
+    </header> -->
 
-    <main>
-      <nuxt-child /> <!-- 这里显示页面内容 -->
+    <!-- <main> -->
+    <nuxt /> <!-- 这里显示页面内容 -->
 
-    </main>
+    <!--  </main> -->
 
-    <footer>
-      <!-- 在这里放置你的页脚或其他内容 -->
-      <Footerc />
-    </footer>
+    <!--  <footer> -->
+    <!-- 在这里放置你的页脚或其他内容 -->
+    <!--  <Footerc /> -->
+    <!-- </footer> -->
 
   </div>
 </template>
