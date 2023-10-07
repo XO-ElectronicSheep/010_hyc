@@ -14,6 +14,7 @@
 
     <main>
       <nuxt-child /> <!-- 这里显示页面内容 -->
+
     </main>
 
     <footer>

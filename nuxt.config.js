@@ -28,6 +28,9 @@ module.exports = {
   */
   css: [
     //'element-ui/lib/theme-chalk/index.css'
+
+    'video.js/dist/video-js.css',
+    "vant/lib/index.css"
   ],
   /*
   ** Plugins to load before mounting the App
@@ -37,7 +40,9 @@ module.exports = {
       src: '~/plugins/element-ui',
       ssr: true //关闭服务端渲染
     },
-    { src: '~plugins/mixins.js', ssr: true }
+    //{ src: '~plugins/mixins.js', ssr: true },
+    { src: '~/plugins/vue-video-player.js', ssr: false },
+    { src: '~/plugins/vant.js', ssr: true }
 
   ],
   /*
@@ -46,6 +51,9 @@ module.exports = {
   buildModules: [
 
   ],
+  router: {
+    middleware: 'device'
+  },
   /*
   ** Nuxt.js modules
   */
@@ -72,7 +80,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    transpile: [/^element-ui/],
+    transpile: ["/^element-ui/", /^vant-ui/],
     /*
     ** You can extend webpack config here
     */

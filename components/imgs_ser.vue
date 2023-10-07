@@ -36,8 +36,8 @@
         </div>
     </div>
 
-    <div class="neirong-ios" v-else>
-        <div class="goods-ios">
+    <div class="neirong-ios-no" v-else>
+        <!--  <div class="goods-ios">
             <div class="fenge-ios">
                 <img src="../assets//log_nav.jpg" alt="好运车-汽车托运">
             </div>
@@ -61,7 +61,7 @@
                     <span class="header-1-ios">资质证书-专业保障</span>
                 </i>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 

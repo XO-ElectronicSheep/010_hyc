@@ -1,4 +1,4 @@
-import Vue from 'vue'
+/* import Vue from 'vue'
 
 Vue.mixin({
     data() {
@@ -31,4 +31,4 @@ Vue.mixin({
             }
         }
     }
-})
+}) */

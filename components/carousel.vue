@@ -32,28 +32,32 @@
 
     <div v-else>
         <div class="getwen-3">
+
             <div class="headerg">
-                <div>托运询价</div>
-                <div><a href="tel:1234567890">订单查询</a></div>
+                <img src="../assets/logpinpa.png" alt="好运车">
             </div>
             <div class="app-1">
-                <el-cascader size="large" :options="options" v-model="value" @change="cars" placeholder="选填/车型选择">
+                <div>车型</div>
+                <el-cascader size="large" :options="options" v-model="value" @change="cars" placeholder="车型选择">
                 </el-cascader>
             </div>
             <div class="app-1">
+                <div>出发地</div>
                 <el-cascader size="large" :options="pcTextArr" v-model="selectedOptions" @change="handleChange_start"
-                    placeholder="选填/出发地选择">
+                    placeholder="出发地选择">
                 </el-cascader>
             </div>
             <div class="app-1">
+                <div>终点地</div>
                 <el-cascader size="large" :options="pcTextArr" v-model="endOptions" @change="handleChange_end"
-                    placeholder="选填/终点地选择">
+                    placeholder="终点地选择">
                 </el-cascader>
             </div>
             <div class="telip-2">
                 <el-form ref="phoneForm" :model="formData" :rules="formRules">
                     <el-form-item prop="phone">
-                        <el-input v-model="formData.phone" placeholder="必填/请输入手机号" maxlength="11" size="large"></el-input>
+                        <div>手机号</div>
+                        <el-input v-model="formData.phone" placeholder="请输入手机号" maxlength="11" size="large"></el-input>
                     </el-form-item>
                     <el-form-item class="button-pc-1">
                         <el-button type="primary" @click="submitForm">点击获取报价</el-button>
@@ -134,6 +138,7 @@ export default {
         handleChange_start(value1) {
             this.con.start_city = value1[value1.length - 1]
             console.log(this.con)
+            console.log(pcTextArr)
         },
         handleChange_end(value2) {
             this.con.end_city = value2[value2.length - 1]
@@ -160,6 +165,7 @@ export default {
                         type: 'success',
                         center: true
                     });
+
                 }
 
             });
@@ -257,48 +263,28 @@ div a {
     margin: 0 auto;
 }
 
-.getwen-3 {
-    width: 90%;
-    margin: 0 auto;
-    border-radius: 2rem;
-    background-color: white;
-    height: 33rem;
-    position: relative;
-    margin-top: -5rem;
-    z-index: 9;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.getwen-3 div {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    height: 5rem;
-    margin-bottom: 2rem;
-}
-
-.getwen-3 .app-1 {
-    width: 80%;
-    margin-bottom: 1rem;
-}
-
 .headerg {
-    width: 90%;
-    height: 0.2rem !important;
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    font-size: 2rem;
-    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    margin: 0.8rem auto;
 }
 
-.headerg div:first-child {
-    color: #409eff;
-}
+
 
 .el-input {
     margin-bottom: 0 !important;
+}
+
+.app-1 {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.app-1 div:first-child {
+    line-height: 3.5rem;
+    width: 10%;
+    font-size: 1.3rem;
+    margin-right: 1rem;
 }
 </style>
