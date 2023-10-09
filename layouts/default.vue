@@ -1,39 +1,16 @@
 <template>
-  <div>
-    <!-- 跳转-声明式 -->
-
-    <!-- 展示区 router-view -->
-
-
-
-
-    <!--  <header> -->
-    <!-- 在这里放置你的导航栏或其他内容 -->
-    <!--   <AppHeader></AppHeader>
-    </header> -->
-
-    <!-- <main> -->
-    <nuxt /> <!-- 这里显示页面内容 -->
-
-    <!--  </main> -->
-
-    <!--  <footer> -->
-    <!-- 在这里放置你的页脚或其他内容 -->
-    <!--  <Footerc /> -->
-    <!-- </footer> -->
-
-  </div>
+  <nuxt /> <!-- 这里显示页面内容 -->
 </template>
 
 
 <script>
-import AppHeader from './app-header';
-import Footerc from './footerc.vue';
+/* import AppHeader from './app-header';
+import Footerc from './footerc.vue'; */
 export default {
-  components: {
-    AppHeader,
-    Footerc
-  },
+  /*   components: {
+      AppHeader,
+      Footerc
+    }, */
 
 
 }

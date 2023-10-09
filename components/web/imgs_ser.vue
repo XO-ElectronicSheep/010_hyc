@@ -2,7 +2,7 @@
     <div class="neirong" v-if="isMobile">
         <div class="goods">
             <div class="fenge">
-                <img src="../assets//log_nav.jpg" alt="好运车-汽车托运">
+                <img src="../../assets/log_nav.jpg" alt="好运车-汽车托运">
             </div>
             <div class="en-1">专注轿车托运 <p>12年</p>
             </div>
@@ -34,34 +34,6 @@
                 </p>
             </div>
         </div>
-    </div>
-
-    <div class="neirong-ios-no" v-else>
-        <!--  <div class="goods-ios">
-            <div class="fenge-ios">
-                <img src="../assets//log_nav.jpg" alt="好运车-汽车托运">
-            </div>
-            <div class="en-1-ios">专注轿车托运 <p>12年</p>
-            </div>
-            <div class="cn-2-ios">好运车品牌合同及保险</div>
-        </div>
-        <div class="zhanshi_hetou-ios">
-            <div class="ht-ios">
-                <i class="el-icon-postcard">
-                    <span class="header-1-ios">汽车独立保险</span>
-                </i>
-            </div>
-            <div class="ht-ios">
-                <i class="el-icon-connection">
-                    <span class="header-1-ios">正式合同一式两份</span>
-                </i>
-            </div>
-            <div class="ht-ios">
-                <i class="el-icon-notebook-2">
-                    <span class="header-1-ios">资质证书-专业保障</span>
-                </i>
-            </div>
-        </div> -->
     </div>
 </template>
 
@@ -171,26 +143,6 @@ export default {
     color: white !important;
 }
 
-.neirong-ios {
-    width: 100%;
-    height: 33rem;
-    display: flex;
-    z-index: -1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #00172a59;
-    background-image: url("../assets/banner1.jpg");
-    margin-top: 5rem;
-    color: white;
-    font-size: 2rem;
-}
-
-.neirong-ios>div {
-    flex: 0 0 auto;
-    /* 可选，用于控制元素的宽度 */
-    width: 100%;
-    /* 可选，用于控制元素的宽度 */
-}
 
 .goods-ios {
     height: 15rem;

@@ -1,5 +1,5 @@
 <template>
-    <div class="moeay" v-if="isMobile">
+    <div class="moeay">
         <div class="topc">立刻获取 &nbsp; <p>轿车托运报价</p>
         </div>
         <div class="getwen">
@@ -24,43 +24,6 @@
                     </el-form-item>
                     <el-form-item class="button-pc">
                         <el-button type="danger" @click="submitForm">点击获取报价</el-button>
-                    </el-form-item>
-                </el-form>
-            </div>
-        </div>
-    </div>
-
-    <div v-else>
-        <div class="getwen-3">
-
-            <div class="headerg">
-                <img src="../assets/logpinpa.png" alt="好运车">
-            </div>
-            <div class="app-1">
-                <div>车型</div>
-                <el-cascader size="large" :options="options" v-model="value" @change="cars" placeholder="车型选择">
-                </el-cascader>
-            </div>
-            <div class="app-1">
-                <div>出发地</div>
-                <el-cascader size="large" :options="pcTextArr" v-model="selectedOptions" @change="handleChange_start"
-                    placeholder="出发地选择">
-                </el-cascader>
-            </div>
-            <div class="app-1">
-                <div>终点地</div>
-                <el-cascader size="large" :options="pcTextArr" v-model="endOptions" @change="handleChange_end"
-                    placeholder="终点地选择">
-                </el-cascader>
-            </div>
-            <div class="telip-2">
-                <el-form ref="phoneForm" :model="formData" :rules="formRules">
-                    <el-form-item prop="phone">
-                        <div>手机号</div>
-                        <el-input v-model="formData.phone" placeholder="请输入手机号" maxlength="11" size="large"></el-input>
-                    </el-form-item>
-                    <el-form-item class="button-pc-1">
-                        <el-button type="primary" @click="submitForm">点击获取报价</el-button>
                     </el-form-item>
                 </el-form>
             </div>
