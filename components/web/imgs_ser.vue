@@ -1,5 +1,5 @@
 <template>
-    <div class="neirong" v-if="isMobile">
+    <div class="neirong">
         <div class="goods">
             <div class="fenge">
                 <img src="../../assets/log_nav.jpg" alt="好运车-汽车托运">

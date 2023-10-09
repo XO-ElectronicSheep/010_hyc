@@ -4,13 +4,11 @@
 
 
 <script>
-/* import AppHeader from './app-header';
-import Footerc from './footerc.vue'; */
+
 export default {
-  /*   components: {
-      AppHeader,
-      Footerc
-    }, */
+  components: {
+
+  },
 
 
 }

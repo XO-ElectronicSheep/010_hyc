@@ -5,13 +5,13 @@
         <div class="cercc">
             <el-carousel :interval="4000" height="30rem">
                 <el-carousel-item>
-                    <img src="../assets/banner1.jpg" alt="汽车托运" class="carousel-image">
+                    <img src="../../assets/banner1.jpg" alt="汽车托运" class="carousel-image">
                 </el-carousel-item>
                 <el-carousel-item>
-                    <img src="../assets/banner2.jpg" alt="汽车托运" class="carousel-image">
+                    <img src="../../assets/banner2.jpg" alt="汽车托运" class="carousel-image">
                 </el-carousel-item>
                 <el-carousel-item>
-                    <img src="../assets/banner3.jpg" alt="汽车托运" class="carousel-image">
+                    <img src="../../assets/banner3.jpg" alt="汽车托运" class="carousel-image">
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -57,7 +57,7 @@ export default {
         }
     },
     mounted() {
-        console.log('this is current player instance object', this.myVideoPlayer)
+        /*  console.log('this is current player instance object', this.myVideoPlayer) */
     },
 
 

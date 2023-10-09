@@ -36,12 +36,13 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+
     {
       src: '~/plugins/element-ui',
       ssr: true //关闭服务端渲染
     },
     //{ src: '~plugins/mixins.js', ssr: true },
-    { src: '~/plugins/vue-video-player.js', ssr: false },
+    { src: '~/plugins/vue-video-player.js', ssr: true },
     { src: '~/plugins/vant.js', ssr: true }
 
   ],

@@ -27,7 +27,7 @@
                     </div>
                     <div class="hr"></div>
                 </div>
-                <!-- <Carousel /> -->
+                <AbLab />
             </div>
         </div>
     </div>
@@ -35,13 +35,13 @@
   
 <script>
 import Header from '~/components/ios/header.vue';
-
+import AbLab from '~/components/ios/ablab.vue';
 import 'video.js/dist/video-js.css'
 import 'vue-video-player/src/custom-theme.css'
 
 export default {
     components: {
-
+        AbLab,
         Header
     },
     data() {
@@ -83,7 +83,7 @@ export default {
 }
 
 .carouselcc {
-    margin-top: 6rem;
+    margin-top: 0.5rem;
     background-color: white !important;
 }
 
@@ -92,7 +92,9 @@ export default {
 }
 
 .cercc img {
+    display: flex;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .back1 {
@@ -107,6 +109,7 @@ export default {
     display: flex;
     justify-content: center;
     margin-top: -4.3rem;
+
 }
 
 .back2 p {

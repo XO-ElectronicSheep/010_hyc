@@ -2,6 +2,7 @@
     <div>
         页面不存在 404
         <button @click="$router.replace('/')">返回首页</button>
+
     </div>
 </template>
 
@@ -13,7 +14,8 @@ export default {
         /* 接收错误 */
         props: ['error']
 
-    }
+    },
+
 }
 </script>
 
