@@ -31,7 +31,7 @@
             </div>
             <div class="getUser">
                 <van-button square type="info" native-type="submit" size="large"
-                    class="custom-button my-button van-button--gradient-blue">立刻询价</van-button>
+                    class="twinkle my-button van-button--gradient-blue">立刻询价</van-button>
             </div>
 
         </van-form>
@@ -92,6 +92,11 @@ export default {
 </script>
 
 <style scoped>
+.nav {
+    width: 100%;
+    height: 42rem;
+}
+
 .postd {
     width: 80%;
     margin: 2rem auto;
@@ -123,10 +128,7 @@ export default {
 
 }
 
-.custom-button {
-    /* 添加自定义样式 */
-    animation: gradientAnimation 1s infinite;
-}
+
 
 .van-button {
     border-radius: 1rem;
@@ -136,19 +138,5 @@ export default {
     /* 设置按钮为渐变蓝色 */
     background: linear-gradient(to right, #00c6ff, #0072ff);
     color: white;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 </style>
