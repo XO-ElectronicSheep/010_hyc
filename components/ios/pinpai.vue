@@ -31,7 +31,6 @@
         <Top2 />
     </div>
 
-
     <div class="pinpai" v-else-if="fuwu">
         <div class="back1">HAOYUNCHE</div>
         <div class="back2">
@@ -40,19 +39,61 @@
             <p>服务中心</p>
         </div>
         <p class="pdian"></p>
+        <Sctext />
+    </div>
 
+    <div class="pinpai" v-else-if="baozhang">
+        <div class="back1">HAOYUNCHE</div>
+        <div class="back2">
+            <p>中振品牌</p>
+            <p></p>
+            <p>四大安全保障</p>
+        </div>
+        <p class="pdian"></p>
+        <Baozhangtop />
+    </div>
+
+
+    <div class="pinpai" v-else-if="hetong">
+        <div class="back1">HAOYUNCHE</div>
+        <div class="back2">
+            <p>中振品牌</p>
+            <p></p>
+            <p>合同及保险</p>
+        </div>
+        <p class="pdian"></p>
+        <Hetong />
+    </div>
+
+    <div class="pinpai" v-else-if="youshi">
+        <div class="back1">HAOYUNCHE</div>
+        <div class="back2">
+            <p>中振品牌</p>
+            <p></p>
+            <p>品牌优势</p>
+        </div>
+        <p class="pdian"></p>
+        <Youshi />
     </div>
 </template>
 
 <script>
-import Jieshao from '~/components/ios/pinpai_cd/jieshao.vue'
-import Top2 from '~/components/ios/pinpai_cd/top2.vue'
+import Jieshao from './pinpai_cd/jieshao.vue'
+import Top2 from './pinpai_cd/top2.vue'
+import Sctext from './pinpai_cd/sctext.vue'
+import Baozhangtop from './pinpai_cd/baozhangtop.vue'
+import Hetong from './pinpai_cd/hetong.vue'
+import Youshi from './pinpai_cd/youshi.vue'
 export default {
     components: {
         Jieshao,
-        Top2
+        Top2,
+        Sctext,
+        Baozhangtop,
+        Hetong,
+        Youshi
     },
-    props: ['message', 'tow', 'san', 'fuwu'],
+    props: ['message', 'tow', 'san', 'fuwu', 'baozhang', 'hetong', 'youshi'],
 
     mounted() {
         // console.log(this.message)

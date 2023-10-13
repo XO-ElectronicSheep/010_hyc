@@ -42,9 +42,19 @@
             <Flex9 />
             <Pinpai fuwu=1 />
 
-            <Footerm />
-        </div>
 
+
+
+            <Pinpai baozhang=1 />
+            <AbLab />
+
+            <Pinpai hetong=1 />
+
+            <Duonian />
+
+            <Pinpai youshi=1 />
+        </div>
+        <Footerm />
     </div>
 </template>
 
@@ -55,6 +65,7 @@ import Imglvg from '~/components/ios/img_lvg.vue';
 import Pinpai from '~/components/ios/pinpai.vue'
 import Flex9 from '~/components/ios/flex9.vue';
 import Footerm from '~/components/ios/footerm.vue';
+import Duonian from '~/components/ios/duonian.vue';
 import 'video.js/dist/video-js.css'
 import 'vue-video-player/src/custom-theme.css'
 
@@ -65,7 +76,8 @@ export default {
         Imglvg,
         Pinpai,
         Flex9,
-        Footerm
+        Footerm,
+        Duonian
     },
     data() {
         return {
