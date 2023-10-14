@@ -53,7 +53,11 @@
             <Duonian />
 
             <Pinpai youshi=1 />
+            <Pinpai jianjie=1 />
+            <Pinpai banshi=1 />
+            <AbLab />
         </div>
+        <Footera />
         <Footerm />
     </div>
 </template>
@@ -66,6 +70,7 @@ import Pinpai from '~/components/ios/pinpai.vue'
 import Flex9 from '~/components/ios/flex9.vue';
 import Footerm from '~/components/ios/footerm.vue';
 import Duonian from '~/components/ios/duonian.vue';
+import Footera from '~/components/ios/footera.vue';
 import 'video.js/dist/video-js.css'
 import 'vue-video-player/src/custom-theme.css'
 
@@ -77,7 +82,8 @@ export default {
         Pinpai,
         Flex9,
         Footerm,
-        Duonian
+        Duonian,
+        Footera
     },
     data() {
         return {
@@ -227,6 +233,7 @@ export default {
 }
 
 .biange {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

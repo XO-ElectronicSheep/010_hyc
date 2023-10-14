@@ -32,6 +32,8 @@
             <div class="getUser">
                 <van-button square type="info" native-type="submit" size="large"
                     class="twinkle my-button van-button--gradient-blue">立刻询价</van-button>
+
+
             </div>
 
         </van-form>
@@ -40,9 +42,11 @@
 
 <script>
 import { areaList } from '@vant/area-data';
+import { Toast } from 'vant';
 export default {
     data() {
         return {
+
             areaList, // 地址
             outcsinfo: {
                 place: '',//终点地
@@ -84,7 +88,11 @@ export default {
 
 
         onSubmit(values) {
+            Toast.success({ message: '    提交成功      稍后客服将联系您' });
             console.log('submit', values);
+            let dataUser = this.outcsinfo
+            this.outcsinfo = {}
+            console.log(dataUser)
         },
     }
 }

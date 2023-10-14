@@ -75,6 +75,30 @@
         <p class="pdian"></p>
         <Youshi />
     </div>
+
+
+    <div class="pinpai" v-else-if="jianjie">
+        <div class="back1">HAOYUNCHE</div>
+        <div class="back2">
+            <p>中振品牌</p>
+            <p></p>
+            <p>品牌简介</p>
+        </div>
+        <p class="pdian"></p>
+        <Jianjie />
+    </div>
+
+
+    <div class="pinpai" v-else-if="banshi">
+        <div class="back1">HAOYUNCHE</div>
+        <div class="back2">
+            <p>中振品牌</p>
+            <p></p>
+            <p>全国办事处地址</p>
+        </div>
+        <p class="pdian"></p>
+
+    </div>
 </template>
 
 <script>
@@ -84,6 +108,7 @@ import Sctext from './pinpai_cd/sctext.vue'
 import Baozhangtop from './pinpai_cd/baozhangtop.vue'
 import Hetong from './pinpai_cd/hetong.vue'
 import Youshi from './pinpai_cd/youshi.vue'
+import Jianjie from './pinpai_cd/jianjie.vue'
 export default {
     components: {
         Jieshao,
@@ -91,9 +116,10 @@ export default {
         Sctext,
         Baozhangtop,
         Hetong,
-        Youshi
+        Youshi,
+        Jianjie
     },
-    props: ['message', 'tow', 'san', 'fuwu', 'baozhang', 'hetong', 'youshi'],
+    props: ['message', 'tow', 'san', 'fuwu', 'baozhang', 'hetong', 'youshi', 'jianjie', 'banshi'],
 
     mounted() {
         // console.log(this.message)
