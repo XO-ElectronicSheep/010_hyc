@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <van-button round type="info" block>免费拨打电话</van-button>
+        <a :href="'tel:' + phoneNumber"> <van-button round type="info" block> 免费拨打电话</van-button></a>
     </div>
 </template>
 
@@ -17,6 +17,7 @@
 export default {
     data() {
         return {
+            phoneNumber: '111-1111-111',
             icons: [
                 {
                     id: 1,
@@ -42,6 +43,13 @@ export default {
 </script>
 
 <style scoped>
+a:link {
+    width: 40%;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fb3c3b;
+}
+
 .footer2 {
     display: flex;
     width: 100%;
@@ -77,7 +85,7 @@ export default {
 }
 
 .van-button {
-    width: 40%;
+    width: 100%;
     background: linear-gradient(to right, rgb(255, 224, 184), rgb(255, 204, 93));
     border: none;
     color: red;
