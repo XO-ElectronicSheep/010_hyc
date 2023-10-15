@@ -5,8 +5,8 @@
         <!-- 移动 -->
         <div class="carouselcc">
             <div class="cercc">
-                <img src="../../assets/pan1.png" alt="">
-
+                <img src="../../assets/navheader.jpg" alt="">
+                <div class="navbule">专注轿车托运老品牌</div>
                 <Pinpai message=1 />
                 <!--  -->
                 <div class="video-vuec">
@@ -127,7 +127,7 @@ export default {
                 // 播放器配置
                 muted: false, // 是否静音
                 language: 'zh-CN',
-                aspectRatio: '16:8',
+                aspectRatio: '16:9',
                 //playbackRates: [0.7, 1.0, 1.5, 2.0], // 播放速度
                 controls: true,
                 preload: 'false', // 视频预加载
@@ -192,7 +192,8 @@ export default {
 .cercc img {
     display: flex;
     width: 100%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    height: 35rem;
 }
 
 
@@ -257,6 +258,20 @@ export default {
     /* background-color: #148acf; */
     border-radius: 1rem;
 
+}
+
+
+.navbule {
+    width: 100%;
+    height: 4rem;
+    background-color: #148acf;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    margin-top: -0.1rem;
 }
 
 .icontext {
