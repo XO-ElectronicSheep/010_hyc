@@ -22,11 +22,11 @@
                 <div class="postd">
                     <van-field v-model="outcsinfo.tel" type="tel" label="手机号" required
                         :rules="[{ required: true, pattern: /^1[3456789]\d{9}$/, message: '手机号码格式错误！' }]"
-                        placeholder="请输入手机号" name="tel" />
+                        placeholder="请输入手机号" name="tel" maxlength="11" />
                 </div>
                 <div class="postd">
                     <van-field v-model="outcsinfo.cars" label="车型" required :rules="[{ required: true }]"
-                        placeholder="请输入车型" name="cars" maxlength="11" />
+                        placeholder="请输入车型" name="cars" />
                 </div>
             </div>
             <div class="getUser">
@@ -90,7 +90,23 @@ export default {
         onSubmit(values) {
             Toast.success({ message: '    提交成功      稍后客服将联系您' });
             console.log('submit', values);
-            let dataUser = this.outcsinfo
+            // 获取当前时间戳
+            const timestamp = Date.now();
+
+            // 创建一个Date对象
+            const date = new Date(timestamp);
+
+            // 获取年、月、日、小时和分钟
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}`;
+            let dataUser = values
+
+            dataUser.timestamp = formattedDate
+
             this.outcsinfo = {}
             console.log(dataUser)
         },
