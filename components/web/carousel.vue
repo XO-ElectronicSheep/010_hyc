@@ -123,7 +123,7 @@ export default {
                     this.endOptions = []
                     this.value = ''
                     this.formData.phone = '';
-                    this.$alert('一对一客服将在30分钟内联系您', '提交成功', {
+                    this.$msgbox.alert('一对一客服将在30分钟内联系您', '提交成功', {
                         confirmButtonText: '确定',
                         type: 'success',
                         center: true

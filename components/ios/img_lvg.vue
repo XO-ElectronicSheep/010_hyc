@@ -1,5 +1,5 @@
 <template>
-    <img src="../../assets/logpinpa.png" alt="">
+    <img src="../../assets/20231030105704.png" alt="轿车托运">
 </template>
 
 <script>
@@ -10,7 +10,7 @@
 <style scoped>
 img {
     display: flex;
-    width: 45%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 1rem;
 

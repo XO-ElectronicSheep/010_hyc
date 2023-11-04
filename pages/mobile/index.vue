@@ -1,20 +1,11 @@
 <template>
     <div>
         <Header />
-
         <!-- 移动 -->
         <div class="carouselcc">
             <div class="cercc">
-                <img src="../../assets/navheader.jpg" alt="">
+                <img src="../../assets/ios/navheader.jpg" alt="汽车托运">
                 <div class="navbule">专注轿车托运老品牌</div>
-                <Pinpai message=1 />
-                <!--  -->
-                <div class="video-vuec">
-                    <section class="vueVideo">
-                        <div v-video-player:myVideoPlayer="playerOptions" class="video-player-box"
-                            :playsinline="playsinline"></div>
-                    </section>
-                </div>
             </div>
             <div class="ponav">
                 <div class="hr"></div>
@@ -23,13 +14,22 @@
                 </div>
                 <div class="hr"></div>
             </div>
-
             <AbLab />
+            <Pinpai message=1 />
+            <div class="video-vuec">
+                <section class="vueVideo">
+                    <div v-video-player:myVideoPlayer="playerOptions" class="video-player-box" :playsinline="playsinline">
+                    </div>
+                </section>
+            </div>
+
 
             <div class="biange">
                 <div class="items" v-for="item of biaoge " :key="item.id">
                     <van-icon :name="item.icon" />
-                    <p class="icontext">{{ item.text }}</p>
+                    <p class="icontext"><a href="tel:12222222">{{ item.text }}</a>
+                    </p>
+
                 </div>
             </div>
 
@@ -279,5 +279,10 @@ export default {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 0.2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 </style>

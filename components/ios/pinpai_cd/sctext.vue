@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <div class="nav_c" v-for="item in dec" :key="item.id">
-            <img :src="item.img" alt="">
+            <img :src="item.img" alt="轿车托运">
             <div class="beij">{{ item.text1 }}</div>
             <div class="redtext">
                 {{ item.text2 }}
@@ -17,37 +17,37 @@ export default {
             dec: [
                 {
                     id: 1,
-                    img: require('../../../assets/banner2.jpg'),
+                    img: require('../../../assets/ios/fuwu/5.jpg'),
                     text1: '私家车托运',
                     text2: '--全国路线  往返发车--'
                 },
                 {
                     id: 2,
-                    img: require('../../../assets/banner2.jpg'),
+                    img: require('../../../assets/ios/fuwu/14.jpg'),
                     text1: '二手车托运',
                     text2: '--全国保险  全程跟踪--'
                 },
                 {
                     id: 3,
-                    img: require('../../../assets/banner2.jpg'),
+                    img: require('../../../assets/ios/fuwu/15.jpg'),
                     text1: '单台配送',
                     text2: '--快捷发车  量身定制--'
                 },
                 {
                     id: 4,
-                    img: require('../../../assets/banner2.jpg'),
+                    img: require('../../../assets/ios/fuwu/18.jpg'),
                     text1: '广告车托运',
                     text2: '--经验丰富  专业操作--'
                 },
                 {
                     id: 5,
-                    img: require('../../../assets/banner2.jpg'),
+                    img: require('../../../assets/ios/fuwu/19.jpg'),
                     text1: '商品车托运',
                     text2: '--价格透明  批发发运--'
                 },
                 {
                     id: 6,
-                    img: require('../../../assets/banner2.jpg'),
+                    img: require('../../../assets/ios/fuwu/20.jpg'),
                     text1: '巡展车托运',
                     text2: '--装车即走  安全高效--'
                 },

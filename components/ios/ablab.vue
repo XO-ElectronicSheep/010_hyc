@@ -1,6 +1,6 @@
 <template>
     <div class="nav">
-        <img src="../../assets/logpinpa.png" alt="">
+        <img src="../../assets/20231030105704.png" alt="轿车托运">
         <van-form @submit="onSubmit">
             <div class="labSetlect">
                 <div class="postd">
@@ -32,10 +32,7 @@
             <div class="getUser">
                 <van-button square type="info" native-type="submit" size="large"
                     class="twinkle my-button van-button--gradient-blue">立刻询价</van-button>
-
-
             </div>
-
         </van-form>
     </div>
 </template>
@@ -133,7 +130,7 @@ export default {
 
 .nav img {
     display: flex;
-    width: 45%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 1rem;
 

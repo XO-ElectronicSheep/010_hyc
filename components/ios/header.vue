@@ -2,7 +2,7 @@
     <div class="nav">
         <!-- 移动布局 -->
         <div class="nav-header">
-            <div><img src="../../assets/log_nav.jpg" alt="好运车">全国服务热线:400-678-2880</div>
+            <div><img src="../../assets/ios/kefu.png" alt="汽车托运">全国服务热线:400-678-2880</div>
         </div>
     </div>
 </template>
@@ -41,8 +41,9 @@ export default {
 }
 
 .nav-header img {
-    width: 5rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
 }
 
 .nav-header div {

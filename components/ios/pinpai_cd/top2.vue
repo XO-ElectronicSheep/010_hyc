@@ -11,7 +11,7 @@
         </div>
         <div class="navf">
             <div class="toptow" v-for="item in top2c" :key="item.id">
-                <img :src="item.img" alt="">
+                <img :src="item.img" alt="汽车托运">
                 <div class="texttop">
                     <div class="fista">{{ item.name }}</div>
                     <div class="dddd">
@@ -23,7 +23,6 @@
         </div>
     </div>
 </template>
-
 <script>
 export default {
     data() {
@@ -53,15 +52,14 @@ export default {
                     id: 1,
                     name: '私家车托运',
                     name2: '更高效/更安全/更贴心',
-
-                    img: require('../../../assets/banner2.jpg')
+                    img: require('../../../assets/ios/20231031084759.jpg')
                 },
                 {
                     id: 2,
                     name: '单台托运',
                     name2: '尊车爱车，',
                     name3: '用心呵护所托',
-                    img: require('../../../assets/banner2.jpg')
+                    img: require('../../../assets/ios/9.jpg')
                 },
             ]
         }

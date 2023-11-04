@@ -3,7 +3,7 @@
         <!-- pc布局 -->
         <div class="nav-pc-flx">
             <div class="ael-center">
-                <img src="../../assets/log_nav.jpg" alt="好运车" class="nav_p">
+                <img src="../../assets/20231030105704.png" alt="金百顺" class="nav_p">
             </div>
             <div class="dd">
                 <el-menu :default-active="activeIndex" @select="handleSelect" active-text-color="#ff0000" mode="horizontal">
@@ -33,9 +33,7 @@ export default {
             navs: [
                 { path: '/desktop/frontpage', title: '首页' },
                 { path: '/desktop/case', title: '成功案例' },
-                { path: '/desktop/about', title: '关于' },
-                { path: '/desktop', title: '成功案例' },
-                { path: '/desktop', title: '关于' },
+                { path: '/desktop/about', title: '公司介绍' },
             ],
             telephone: '400-682-9858'
         }
@@ -76,6 +74,7 @@ export default {
 .nav-pc-flx {
     display: flex;
     justify-content: center;
+
 }
 
 
@@ -102,10 +101,11 @@ export default {
 .ael-center {
     display: flex;
     align-items: center;
-
+    margin: auto 5rem;
 }
 
 .ael-center img {
-    width: 13rem;
+    width: 19rem;
+    height: 6rem;
 }
 </style>

@@ -6,16 +6,23 @@ module.exports = {
   */
   head: {
     /* 标头配置 */
-    title: '运好车',
+    title: '金百顺-汽车托运',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'keywords', content: '关键字1' },
+      { name: 'keywords', content: '汽车托运' },
       { hid: 'description', name: 'description', content: '专业汽车、轿车托运服务商' }
     ],
     /* 图标配置 */
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: 'https://hm.baidu.com/hm.js?YOUR_TRACKING_CODE',
+        async: true,
+        defer: true
+      }
     ]
   },
 
@@ -61,7 +68,7 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-
+    'element-ui/nuxt'
   ],
   /*
   ** Axios module configuration

@@ -2,7 +2,7 @@
     <div class="neirong">
         <div class="goods">
             <div class="fenge">
-                <img src="../../assets/log_nav.jpg" alt="好运车-汽车托运">
+                <img src="../../assets/20231030105704.png" alt="金百顺-汽车托运">
             </div>
             <div class="en-1">专注轿车托运 <p>12年</p>
             </div>

@@ -48,7 +48,7 @@
 
 <script>
 import { areaList } from '@vant/area-data';
-import { Toast } from 'vant';
+
 export default {
     data() {
         return {

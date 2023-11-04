@@ -1,6 +1,6 @@
 <template>
     <div class="aa">
-        <img src="../../../assets/logpinpa.png" alt="">
+        <img src="../../../assets/ios/20231101153720.jpg" alt="汽车托运">
         <div class="null-a"></div>
         <div class="cbd">
             <div>

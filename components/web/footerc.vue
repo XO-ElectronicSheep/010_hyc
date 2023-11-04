@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="demo-image">
-            <img src="../../assets/6.png" alt="汽车托运">
+            <img src="../../assets/web/6.png" alt="汽车托运">
             <div class="block-v">
                 <div class="winxin">微信联系一对一客服 <i class="el-icon-thumb"></i></div>
                 <div class="block" v-for="item in url" :key="item">
@@ -11,7 +11,6 @@
         </div>
     </div>
 </template>
-
 <script>
 export default {
     data() {
