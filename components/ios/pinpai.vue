@@ -88,6 +88,18 @@
         <Jianjie />
     </div>
 
+    <div class="pinpai" v-else-if="anli">
+        <div class="back1">JINBAISHUN</div>
+        <div class="back2">
+            <p>金百顺运车</p>
+            <p></p>
+            <p>托运案例</p>
+        </div>
+        <p class="pdian"></p>
+        <Anli />
+    </div>
+
+
 
     <div class="pinpai" v-else-if="banshi">
         <div class="back1">JINBAISHUN</div>
@@ -97,10 +109,9 @@
             <p>全国办事处地址</p>
         </div>
         <p class="pdian"></p>
-
         <div class="footer">
             <div class="telfeng">
-                全国统一服务电话：400-6655-958
+                全国统一服务电话-点击拨打： <a href="tel:400-6655-958">400-6655-958</a>
             </div>
             <div>北京公司--北京市顺义区临河开发区南环路与通顺路东南</div>
             <div>广州公司--广东省广州市增城区广百骏盈物流园3层</div>
@@ -127,6 +138,8 @@
             <div>呼和浩特--回民区G110（中泰物流园）</div>
         </div>
 
+
+
     </div>
 </template>
 
@@ -135,6 +148,7 @@ import Jieshao from './pinpai_cd/jieshao.vue'
 import Top2 from './pinpai_cd/top2.vue'
 import Sctext from './pinpai_cd/sctext.vue'
 import Baozhangtop from './pinpai_cd/baozhangtop.vue'
+import Anli from './pinpai_cd/anli.vue'
 import Hetong from './pinpai_cd/hetong.vue'
 import Youshi from './pinpai_cd/youshi.vue'
 import Jianjie from './pinpai_cd/jianjie.vue'
@@ -146,9 +160,10 @@ export default {
         Baozhangtop,
         Hetong,
         Youshi,
-        Jianjie
+        Jianjie,
+        Anli
     },
-    props: ['message', 'tow', 'san', 'fuwu', 'baozhang', 'hetong', 'youshi', 'jianjie', 'banshi'],
+    props: ['message', 'tow', 'san', 'fuwu', 'baozhang', 'hetong', 'youshi', 'jianjie', 'banshi', 'anli'],
 
     mounted() {
         // console.log(this.message)
@@ -214,5 +229,14 @@ export default {
 
 .footer {
     font-size: 1.4rem;
+}
+
+.telfeng {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: red;
 }
 </style>

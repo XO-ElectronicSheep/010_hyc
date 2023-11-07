@@ -2,7 +2,8 @@
     <div class="nav">
         <!-- 移动布局 -->
         <div class="nav-header">
-            <div><img src="../../assets/ios/kefu.png" alt="汽车托运">全国服务热线:400-678-2880</div>
+            <div><img src="../../assets/ios/kefu.png" alt="汽车托运">全国服务热线点击拨打:<a href="tel:400-678-2880">400-678-2880</a>
+            </div>
         </div>
     </div>
 </template>
@@ -53,5 +54,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #1889d6;
 }
 </style>

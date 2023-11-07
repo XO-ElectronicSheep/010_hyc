@@ -15,7 +15,7 @@ module.exports = {
     ],
     /* 图标配置 */
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './static/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
       {

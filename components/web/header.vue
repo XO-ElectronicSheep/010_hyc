@@ -31,9 +31,9 @@ export default {
         return {
             activeIndex: '-1',
             navs: [
-                { path: '/desktop/frontpage', title: '首页' },
-                { path: '/desktop/case', title: '成功案例' },
-                { path: '/desktop/about', title: '公司介绍' },
+                { path: '/', title: '首页' },
+                { path: '/case', title: '成功案例' },
+                { path: '/about', title: '公司介绍' },
             ],
             telephone: '400-682-9858'
         }

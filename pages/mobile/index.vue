@@ -22,38 +22,25 @@
                     </div>
                 </section>
             </div>
-
-
             <div class="biange">
                 <div class="items" v-for="item of biaoge " :key="item.id">
                     <van-icon :name="item.icon" />
                     <p class="icontext"><a href="tel:12222222">{{ item.text }}</a>
                     </p>
-
                 </div>
             </div>
-
             <Imglvg />
-
             <Pinpai tow=1 />
-
             <Pinpai san=1 />
-
             <Flex9 />
             <Pinpai fuwu=1 />
-
-
-
-
             <Pinpai baozhang=1 />
             <AbLab />
-
             <Pinpai hetong=1 />
-
             <Duonian />
-
             <Pinpai youshi=1 />
             <Pinpai jianjie=1 />
+            <Pinpai anli=1 />
             <Pinpai banshi=1 />
             <AbLab />
         </div>

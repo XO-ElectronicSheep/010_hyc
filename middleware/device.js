@@ -17,6 +17,6 @@ export default function ({ req, redirect }) {
     } else {
         // 如果是桌面设备，跳转到桌面设备路由
         //console.log(userAgent)
-        return redirect('/desktop/frontpage');
+        return redirect('/');
     }
 }
