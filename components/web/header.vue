@@ -23,19 +23,18 @@
         </div>
     </div>
 </template>
-
 <script>
-
 export default {
     data() {
         return {
             activeIndex: '-1',
             navs: [
                 { path: '/', title: '首页' },
-                { path: '/case', title: '成功案例' },
                 { path: '/about', title: '公司介绍' },
+                { path: '/case', title: '托运案例' },
+
             ],
-            telephone: '400-682-9858'
+            telephone: '400-6655-958'
         }
     },
     methods: {
@@ -107,5 +106,10 @@ export default {
 .ael-center img {
     width: 19rem;
     height: 6rem;
+}
+
+
+.el-menu {
+    border-bottom: none !important;
 }
 </style>

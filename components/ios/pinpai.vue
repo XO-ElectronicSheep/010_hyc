@@ -137,9 +137,6 @@
             <div>乌鲁木齐--头屯河区海棠路</div>
             <div>呼和浩特--回民区G110（中泰物流园）</div>
         </div>
-
-
-
     </div>
 </template>
 
@@ -164,7 +161,6 @@ export default {
         Anli
     },
     props: ['message', 'tow', 'san', 'fuwu', 'baozhang', 'hetong', 'youshi', 'jianjie', 'banshi', 'anli'],
-
     mounted() {
         // console.log(this.message)
     }

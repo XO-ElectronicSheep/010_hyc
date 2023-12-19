@@ -18,11 +18,12 @@ import {
     Cascader,
     Form,
     FormItem,
+    Pagination
 } from 'element-ui'
 import { Carousel, CarouselItem } from 'element-ui'
 import { MessageBox } from 'element-ui'
 import { Image } from 'element-ui'
-
+Vue.use(Pagination)
 Vue.use(Image)
 Vue.prototype.$msgbox = MessageBox
 Vue.use(Button)

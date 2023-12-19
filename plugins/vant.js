@@ -1,13 +1,5 @@
-import Vue from "vue";
-import { Toast } from 'vant';
-import { Form } from 'vant';
-import { Field } from 'vant';
-import { Popup } from 'vant';
-import { Icon } from 'vant';
-import { Button } from 'vant';
-Vue.use(Button);
-Vue.use(Icon);
-Vue.use(Popup);
-Vue.use(Field);
-Vue.use(Form);
-Vue.use(Toast);
+import Vue from 'vue'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+
+Vue.use(Vant)

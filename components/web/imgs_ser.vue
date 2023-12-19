@@ -2,11 +2,10 @@
     <div class="neirong">
         <div class="goods">
             <div class="fenge">
-                <img src="../../assets/20231030105704.png" alt="金百顺-汽车托运">
             </div>
             <div class="en-1">专注轿车托运 <p>12年</p>
             </div>
-            <div class="cn-2">好运车品牌合同及保险</div>
+            <div class="cn-2">金百顺品牌合同及保险</div>
         </div>
         <div class="zhanshi_hetou">
             <div class="ht">
@@ -45,7 +44,7 @@ export default {
 <style scoped>
 .neirong {
     width: 100%;
-    background-color: #00172a;
+    background-color: #1f1f1f;
     height: 27rem;
     display: flex;
 }

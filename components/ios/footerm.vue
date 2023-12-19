@@ -20,26 +20,23 @@
                 </div>
             </div>
         </div>
-        <a :href="'tel:' + phoneNumber"> <van-button round type="info" block class="telacc"> 免费拨打电话</van-button></a>
-        <van-popup v-model="show" position="bottom" :style="{ height: '40%' }">
+        <a :href="'tel:' + phoneNumber"> <van-button round type="info" block class="telacc">免费拨打电话</van-button></a>
+        <van-popup v-model="show" position="bottom" :style="{ height: '50%' }">
             <Footerlab />
         </van-popup>
-
         <van-popup v-model="wxShow" :style="{ height: '26rem', width: '30rem' }">
             <div class="ppo">
                 <div class="navpop">
                     复制官方微信号，快速获取运价！
                 </div>
-                <div class="weixin">微信号:haoyunche</div>
+                <div class="weixin">微信号:18500559858</div>
                 <div class="butncc">
                     <van-button class="btnd" type="primary" @click="copyAndOpenWeChat">复制微信号</van-button>
                 </div>
-
             </div>
         </van-popup>
     </div>
 </template>
-
 <script scoped>
 import ClipboardJS from 'clipboard'
 import Footerlab from './footerlab.vue';
@@ -49,7 +46,7 @@ export default {
     },
     data() {
         return {
-            phoneNumber: '111-1111-111',
+            phoneNumber: '400-6655-958',
             show: false,
             wxShow: false
         }
@@ -63,7 +60,7 @@ export default {
         },
         copyAndOpenWeChat() {
             // 复制微信号
-            const wechatId = 'haoyunche'
+            const wechatId = '18500559858'
             const clipboard = new ClipboardJS('.copy-button', {
                 text: () => wechatId
             })

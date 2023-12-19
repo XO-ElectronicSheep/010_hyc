@@ -3,7 +3,7 @@
         <div class="demo-image">
             <img src="../../assets/web/6.png" alt="汽车托运">
             <div class="block-v">
-                <div class="winxin">微信联系一对一客服 <i class="el-icon-thumb"></i></div>
+                <div class="winxin">微信联系一对一客服,立刻获取报价 <i class="el-icon-thumb"></i></div>
                 <div class="block" v-for="item in url" :key="item">
                     <el-image style="width: 8rem; height: 8rem" :src="item" fit="fit"></el-image>
                 </div>
@@ -16,14 +16,11 @@ export default {
     data() {
         return {
             fits: ['fill'],
-            url: ['https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'],
-
+            url: [require('../../assets/web/erweima/1.png'), require('../../assets/web/erweima/2.png')],
         }
     },
-
 }
 </script>
-
 <style scoped>
 .demo-image {
     position: fixed;

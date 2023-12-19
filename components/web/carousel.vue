@@ -33,6 +33,7 @@
 
 <script>
 import { pcTextArr } from 'element-china-area-data'
+import axios from 'axios';
 export default {
     data() {
         return {
@@ -40,11 +41,13 @@ export default {
             selectedOptions: [],
             endOptions: [],
             con: {
-                title: '网站留言',
-                cars_size: '',
-                start_city: "",
-                end_city: "",
-                mobile: 0
+                webname: '金百顺',
+                cars: '',
+                come: '',
+                place: '',
+                tel: 0,
+                isUsers: '1',
+                return_visit_information: '空',
             },
             options: [{
                 value: '轿车',
@@ -99,25 +102,23 @@ export default {
     },
     methods: {
         handleChange_start(value1) {
-            this.con.start_city = value1[value1.length - 1]
-            console.log(this.con)
-            console.log(pcTextArr)
+            this.con.come = value1[value1.length - 1]
         },
         handleChange_end(value2) {
-            this.con.end_city = value2[value2.length - 1]
-            console.log(this.con)
+            this.con.place = value2[value2.length - 1]
         },
         cars(value3) {
-            this.con.cars_size = value3[0]
+            this.con.cars = value3[0]
         },
-        submitForm() {
+        async submitForm() {
             this.$refs.phoneForm.validate((valid) => {
                 if (valid) {
                     // 手机号码验证通过
                     // 在此处添加逻辑来处理验证通过后的操作，例如提交表单或其他操作
                     // ...
-                    this.con.mobile = this.formData.phone
-                    console.log(this.con)
+                    this.con.tel = this.formData.phone
+                    //获取到数据 
+                    //console.log(this.con)
                     // 清空输入框
                     this.selectedOptions = []
                     this.endOptions = []
@@ -128,16 +129,18 @@ export default {
                         type: 'success',
                         center: true
                     });
-
                 }
-
+            })
+            const accd = this.con
+            const response = await axios.get('http://124.220.23.104:3002/api/saveData', {
+                params: {
+                    ...accd
+                }
             });
-        }
-
+        },
     }
 }
 </script>
-
 <style scoped>
 .moeay {
     display: flex;

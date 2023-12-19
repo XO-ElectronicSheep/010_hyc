@@ -16,10 +16,19 @@ export default {
     },
     data() {
         return {
-
         }
     },
-
+    mounted() {
+        if (this.isMobile()) {
+            this.$router.push('/mobile')
+        }
+    },
+    methods: {
+        isMobile() {
+            const userAgent = navigator.userAgent.toLowerCase()
+            return /mobile|android|iphone|ipad|phone/i.test(userAgent)
+        }
+    }
 }
 </script>
 

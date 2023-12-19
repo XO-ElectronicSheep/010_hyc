@@ -36,20 +36,22 @@
         </van-form>
     </div>
 </template>
-
 <script>
 import { areaList } from '@vant/area-data';
 import { Toast } from 'vant';
+import axios from 'axios';
 export default {
     data() {
         return {
-
             areaList, // 地址
             outcsinfo: {
-                place: '',//终点地
-                come: '',//出发地
-                tel: '',//电话
-                cars: ''
+                webname: '金百顺',
+                place: '',
+                come: '',
+                tel: '',
+                cars: '',
+                isUsers: '1',
+                return_visit_information: '移动端'
             },
             showAddress: false, // 隐藏弹出框
             showAddress2: false, // 隐藏弹出框
@@ -82,30 +84,17 @@ export default {
             })
             this.outcsinfo.place = st
         },
-
-
-        onSubmit(values) {
+        async onSubmit(values) {
             Toast.success({ message: '    提交成功      稍后客服将联系您' });
-            console.log('submit', values);
-            // 获取当前时间戳
-            const timestamp = Date.now();
-
-            // 创建一个Date对象
-            const date = new Date(timestamp);
-
-            // 获取年、月、日、小时和分钟
-            const year = date.getFullYear();
-            const month = String(date.getMonth() + 1).padStart(2, '0');
-            const day = String(date.getDate()).padStart(2, '0');
-            const hours = String(date.getHours()).padStart(2, '0');
-            const minutes = String(date.getMinutes()).padStart(2, '0');
-            const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}`;
-            let dataUser = values
-
-            dataUser.timestamp = formattedDate
-
-            this.outcsinfo = {}
-            console.log(dataUser)
+            const response = await axios.get('http://124.220.23.104:3002/api/saveData', {
+                params: {
+                    ...this.outcsinfo
+                }
+            });
+            this.outcsinfo.place = ''
+            this.outcsinfo.come = ''
+            this.outcsinfo.tel = ''
+            this.outcsinfo.cars = ''
         },
     }
 }

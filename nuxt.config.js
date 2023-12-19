@@ -4,26 +4,23 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  ssr: true,
   head: {
     /* 标头配置 */
-    title: '金百顺-汽车托运',
+    title: '汽车轿车托运  私家车、二手车、商品车托运-金百顺-汽车托运',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'keywords', content: '汽车托运' },
-      { hid: 'description', name: 'description', content: '专业汽车、轿车托运服务商' }
+      { name: 'baidu-site-verification', content: 'codeva-2KUwqcx8Pm' },
+      { hid: 'keywords', name: 'keywords', content: '汽车托运' },
+      { hid: 'description', name: 'description', content: '北京金佰顺物流-服务热线:400-6655-958 ,十年始终如一专注国内汽车托运服务,主营小汽车、私家车、自驾游车、事故车、二手车、商品车等各种小轿车托运业务。公司自有调度汽车运输车上百辆,全程保险,安全准时送达承诺。' },
+      { hid: 'og:title', property: 'og:title', content: '汽车托运-金百顺' },
+      { hid: 'og:description', property: 'og:description', content: '北京金佰顺物流-服务热线:400-6655-958 ,十年始终如一专注国内汽车托运服务,主营小汽车、私家车、自驾游车、事故车、二手车、商品车等各种小轿车托运业务。公司自有调度汽车运输车上百辆,全程保险,安全准时送达承诺。' },
     ],
     /* 图标配置 */
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './static/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      {
-        src: 'https://hm.baidu.com/hm.js?YOUR_TRACKING_CODE',
-        async: true,
-        defer: true
-      }
-    ]
   },
 
   /*
@@ -50,7 +47,6 @@ module.exports = {
     //{ src: '~plugins/mixins.js', ssr: true },
     { src: '~/plugins/vue-video-player.js', ssr: true },
     { src: '~/plugins/vant.js', ssr: true }
-
   ],
   /*
   ** Nuxt.js dev-modules
@@ -59,7 +55,7 @@ module.exports = {
 
   ],
   router: {
-    middleware: 'device',
+    // middleware: 'device',
   },
   /*
   ** Nuxt.js modules
@@ -68,6 +64,10 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
   ],
+  axios: {
+    baseURL: 'http://124.220.23.104:9001', // 设置你的API的基本URL
+  },
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

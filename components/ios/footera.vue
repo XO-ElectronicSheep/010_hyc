@@ -1,7 +1,7 @@
 <template>
     <div class="footer2">
-        <div>版权所有 @ 2015-2020 金百顺物流运输 </div>
-        <div>网站地图 粤ICP备19056193号</div>
+        <div>版权所有 金百顺物流运输 </div>
+        <div>网站地图 京ICP备18037345号</div>
         <div>本站内容未经许可不得转载或挪用，如有发现将对其追究法律责任</div>
     </div>
 </template>

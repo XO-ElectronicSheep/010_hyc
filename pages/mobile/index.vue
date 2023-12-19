@@ -23,7 +23,7 @@
                 </section>
             </div>
             <div class="biange">
-                <div class="items" v-for="item of biaoge " :key="item.id">
+                <div class="items" v-for="item of biaoge" :key="item.id">
                     <van-icon :name="item.icon" />
                     <p class="icontext"><a href="tel:12222222">{{ item.text }}</a>
                     </p>
@@ -123,10 +123,10 @@ export default {
                     {
                         type: 'video/mp4',
                         src:
-                            'http://localhost:3001/video'
+                            'http://124.220.23.104:3001/video'
                     }
                 ],
-                poster: 'http://localhost:3001/video-img', // 封面图
+                poster: 'http://124.220.23.104:3001/video-img', // 封面图
                 notSupportedMessage: '此视频暂无法播放，请稍后再试'
             }
         }
@@ -161,7 +161,7 @@ export default {
 
 }
 </script>
-  
+
 <style scoped>
 .cercc {
     width: 100%;

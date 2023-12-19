@@ -4,7 +4,6 @@
             <div class="acc">
                 <van-icon name="fire" />
             </div>
-
             <div>今日已有</div>
             <p v-if="randomNumber">{{ randomNumber }}</p>
             <div>人预约</div>
@@ -32,16 +31,11 @@
                         :rules="[{ required: true, pattern: /^1[3456789]\d{9}$/, message: '手机号码格式错误！' }]"
                         placeholder="请输入手机号" name="tel" />
                 </div>
-                <!--   <div class="postd">
-                    <van-field v-model="outcsinfo.cars" label="车型" required :rules="[{ required: true }]"
-                        placeholder="请输入车型" name="cars" maxlength="11" />
-                </div> -->
             </div>
             <div class="getUser">
                 <van-button square type="info" native-type="submit" size="large"
                     class="twinkle my-button van-button--gradient-blue">立刻询价</van-button>
             </div>
-
         </van-form>
     </div>
 </template>
@@ -55,10 +49,13 @@ export default {
             randomNumber: null,
             areaList, // 地址
             outcsinfo: {
+                webname: '金百顺',
                 place: '',//终点地
                 come: '',//出发地
                 tel: '',//电话
-                cars: ''
+                cars: '',
+                isUsers: '1',
+                return_visit_information: '空'
             },
             showAddress: false, // 隐藏弹出框
             showAddress2: false, // 隐藏弹出框
@@ -93,15 +90,20 @@ export default {
         },
         onSubmit(values) {
             Toast.success({ message: '    提交成功      稍后客服将联系您' });
-            console.log('submit', values);
-            let dataUser = this.outcsinfo
-            this.outcsinfo = {}
-            console.log(dataUser)
+            console.log('submit', acc);
+            const acc = this.outcsinfo
+            acc.webname = '金百顺'
+            acc.isUsers = '1'
+            acc.return_visit_information = '空'
+            console.log('sadasdasd' + acc);
+            console.log('submit', acc);
+            // this.outcsinfo = {};
         },
     },
     mounted() {
         this.randomNumber = Math.floor(1000 + Math.random() * 9000);
     }
+
 }
 
 </script>
