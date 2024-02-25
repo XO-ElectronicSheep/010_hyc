@@ -137,8 +137,6 @@ export default {
 }
 
 
-.el-icon-right {}
-
 .textsp {
     color: #666;
 }
